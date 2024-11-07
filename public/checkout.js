@@ -14,7 +14,7 @@ document
 
 // Fetches a payment intent and captures the client secret
 async function initialize() {
-  const response = await fetch("http://localhost:3000/api/payments/create-payment-intent", {
+  const response = await fetch("https://test-node-js-pearl.vercel.app/api/payments/create-payment-intent", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
