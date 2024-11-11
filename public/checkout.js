@@ -12,12 +12,11 @@ initialize();
 // Create a Checkout Session
 async function initialize() {
   const fetchClientSecret = async () => {
-    const response = await  fetch("https://tourmaline-sopapillas-e8a4dc.netlify.app/api/payments/create-payment-intent", {
+    const response = await  fetch("https://test-node-js-pearl.vercel.app/api/payments/create-payment-intent", {
       method: "POST",
     })
         
     const { clientSecret } = await response.json();
-    console.log('clientSecret', clientSecret);
     return clientSecret;
   };
 
