@@ -12,7 +12,7 @@ initialize();
 // Create a Checkout Session
 async function initialize() {
   const fetchClientSecret = async () => {
-    const response = await  fetch("http://localhost:3000/api/payments/create-payment-intent", {
+    const response = await  fetch("https://tourmaline-sopapillas-e8a4dc.netlify.app/api/payments/create-payment-intent", {
       method: "POST",
     })
         
